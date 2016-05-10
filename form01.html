@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1{color:#f80;}
+        .box{width:auto;height: auto;background-color:#ffc;border:20px solid #f80;}
+        label[for="button"]{width: 0px;height: 0px;display:inline-block;overflow:hidden;}
+		.box label{width:100px;display:inline-block;}
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+   <h1>회원가입</h1>
+   <p>*는 필수 입력사항입니다.티켓몬스터를 이용하시는데 필수적인 정보이므로 정확하게 기재해주세요.</p>
+   <div class="box">
+   <form action="#" method="post">
+    <fieldset id="join">
+        <legend></legend>
+        <label for="userName">성명</label>
+        <input type="text" id="userName" name="user" value="" /><br />
+        <label for="id">아이디</label>
+        <input type="text" id="id" name="nickname" value="" />
+        <label for="btn">중복검사버튼</label>
+        <input type="submit" id="btn" name="btn" value="중복아이디 검사"><br />
+        <label for="image">사진</label>
+        <input type="file" id="image" name="image" value="찾아보기" /><br />
+        <label for="password">패스워드</label>
+        <input type="password" id="password" name="pwd" value="" /><br />
+        <label for="pwd">패스워드확인</label>
+        <input type="password" id="pwd" name="pwd" value="" /><br />
+        <span>연락처
+        <select name="tel" id="tel">        
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+        </select>
+        - <input type="text" name="tel2" value="" size="4" maxlength="4">
+        - <input type="text" name="tel3" value="" size="4" maxlength="4">
+        <label for="button"></label>
+        <input type="submit" id="button" name="휴대폰인증" value="휴대폰 인증" /><br />
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SMS수신동의</span>
+        <input type="radio" id="yes" name="yes" value="" />
+        <label for="yes">예</label>
+        <input type="radio" id="no" name="no" value="" />
+        <label for="no">아니오</label>
+        </span><br />
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="mail" value="" />
+        <span>이메일 수신동의
+        <label for="ok">예</label>
+        <input type="radio" id="ok" name="yes" valud="" />
+        <label for="no">아니오</label>
+        <input type="radio" id="" name="no" value="" />
+        <p>회원가입 완료시 인증메일이 발송되오니니 정확한 메일 주소를 기재해 주세요!</p>
+        </span>
+		<span>지역선택
+			<select name="add" id="address">
+				<option value="">-지역선택-</option>
+				<option value="서울">서울</option>
+				<option value="경기">경기</option>
+				<option value="강원">강원</option>
+				<option value="경상">경상</option>
+				<option value="충청">충청</option>
+				<option value="제주">제주</option>
+			</select>
+		</span>           
+    </fieldset>
+    </form>
+   </div>
+</body>
+</html>
